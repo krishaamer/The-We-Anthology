@@ -1,0 +1,75 @@
+<template name="movie">
+	<div class="container">
+	<div id="movie">
+		<div class="row" id="row-movie">
+			<div class="col-md-12 movie" style="height: 170px;">
+				<h1 class="animated fadeInLeft" id="title-movie">{{_ "The Movie"}}</h1>
+			</div>
+		</div>
+		<div class="row" id="row-storyline" style="height: 350px;">
+			<div class="container storyline">
+				<div class="col-md-2"></div>
+				<div class="col-md-8">
+					<h6>{{_ "Synopsis"}}<br /><br />
+					<span style="float:right;">{{_ "byline"}}</span></h6>
+				</div>
+				<div class="col-md-2"></div>
+			</div>
+		</div>
+		<div class="row" id="row-thumbnails">
+			<div class="col-md-12 thumbs">
+				<div class="thumbnails col-md-12">
+				  <div class="col-md-1"></div>
+				  <div class="col-md-6">
+					<div class="thumbnail" style="background-color:#000;">
+					  <img src="gallery/alex-keller-fonseca-still-1.jpg" alt="Alex-Keller Fonseca" id="movie-still-big-view"/>
+					  <h3 id="movie-still-big-header">Alex-Keller Fonseca</h3>
+					  <p id="movie-still-big-desc">At Mama Africa, the central location of the movie.</p>
+					</div>
+				  </div>
+				  <div class="col-md-2">
+					<div class="thumbnail">
+					  <img src="gallery/alex-keller-fonseca-still-1.jpg" alt="Alex-Keller Fonseca" id="movie-still-1" class="movie-still thumb-selected" />
+					</div>
+				  </div>
+				  <div class="col-md-2">
+					<div class="thumbnail" id="movie-still-3">
+					  <img src="gallery/alex-keller-fonseca-still-3.jpg" alt="Alex-Keller Fonseca" id="movie-still-2" class="movie-still" />
+					</div>
+				   </div>
+				   <div class="col-md-2">
+				   	<div class="thumbnail" id="movie-still-4">
+				   	  <img src="gallery/alex-keller-fonseca-still-4.jpg" alt="Alex-Keller Fonseca" id="movie-still-3" class="movie-still" />
+				   	</div>
+					</div>
+					<div class="col-md-2">
+						<div class="thumbnail" id="movie-still-5">
+						  <img src="gallery/alex-keller-fonseca-still-5.jpg" alt="Alex-Keller Fonseca" id="movie-still-4" class="movie-still" />
+						</div>
+					 </div>
+					 <div class="col-md-2">
+					 	<div class="thumbnail" id="movie-still-6">
+					 	  <img src="gallery/alex-keller-fonseca-still-6.jpg" alt="Alex-Keller Fonseca" id="movie-still-5" class="movie-still" />
+					 	</div>
+					  </div>
+					  <div class="col-md-2">
+					  	<div class="thumbnail" id="movie-still-7">
+					  	  <img src="gallery/alex-keller-fonseca-still-7.jpg" alt="Alex-Keller Fonseca" id="movie-still-6" class="movie-still" />
+					  	</div>
+					  </div>
+					  <div class="col-md-4">
+					  	{{#if currentUser}}	
+							<!-- Do nothing. Maybe show pledge reminder? -->
+					 	{{else}}	 
+					  	<div id="wantmore">
+					  	 {{_ "Want to see more"}} <a id='wantmore' href='#hero'>{{_ "upon early access"}}</a>.
+					  	</div>
+					  	{{/if}}	
+					  </div>
+				  <div class="col-md-1"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</template>

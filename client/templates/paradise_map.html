@@ -1,0 +1,38 @@
+<template name="ipad">
+	<div class="container">
+		<div class="row" id="row-ipad">
+			<div class="col-md-12 ipad" id="ipad">
+				<div class="row">
+					<div class="col-md-1"></div>
+					<div class="col-md-10">
+						<div class="launch-promise" id="launch-promise">{{_ "Launch Promise"}}</div>
+					</div>
+					<div class="col-md-1"></div>
+				</div>
+				<div class="row">
+					<div class="col-md-7">
+						<div class="map_tilted" id="map_tilted">{{> map}}</div>
+					</div>
+					<div class="col-md-4">
+						<div id="sales-argument">
+							<ul class="sales-argument unstyled">
+								<li><strong>{{_ "iPad App Features"}}</strong></li>
+								<li>{{_ "82 minutes"}}</li>
+								<li>{{_ "Experience the journey"}}</li>
+								<li><a href="#art">{{_ "High quality paintings"}}</a></li>
+							</ul>
+							{{> user_info}}
+						</div>
+					</div>
+					<div class="col-md-1"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</template>
+
+<template name="map">
+	<div id="map-container" class="map-container" style="width:400px;height:600px;">
+	  <div id="map" class="map"></div>
+	</div>
+</template>
